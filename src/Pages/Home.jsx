@@ -2,25 +2,26 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 import ProductList from '../Components/ProductList';
 import products from '../Data/ProductData';
-import { CiSearch } from "react-icons/ci";
-import Button from 'react-bootstrap/Button';
+ 
+
 
 const Home = () => {
     return (
         <div>
             <Container fluid  className='home'>
-                <Container className='d-flex justify-content-center align-items-center flex-column'>
+                <Container className='homecon'>
                     <div>
-                        <p className='text-light fw-bold fs-4'>What is life without a little spice?</p>
-                        <p className='text-light text-center fw-bold'>Shop Chanel today!</p>
+                        <h2 className='what'>What is life without a little spice?</h2>
+                        <h4 className='shop'>Shop Chanel today!</h4>
                     </div>
-                    <div className='d-flex gap-3 mt-5'>
-                    <div className='box'>
-                        <a href=""> <CiSearch className='fw-bold fs-5' /></a>
-                        <input type='search' placeholder='Search' />
+                    <div class="search">
+                        <div class="search-box-wrapper">
+                            <i class="fa fa-search search-icon"></i>
+                            <input type="search" placeholder="Search" class="searchbox" />
+                        </div>
+                        <button class="searchbut">Search</button>
                     </div>
-                    <Button variant="outline-warning bg-warning text-light px-4">Search</Button>
-                    </div>
+
                     
                     
                 </Container>

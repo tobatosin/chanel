@@ -1,40 +1,58 @@
 const products = [
     {
         id: '3',
-        name: 'Cameroon Pepper Powder',
+        name: 'Nacho Cheese Seasoning',
         details: 'Good for the blood and bones. It does wonders!',
         price: 'N3,000',
         rating: 4,
         reviews: 134,
-        image: '/ProductImages/Product1.png', // Replace with actual image path
+        image: '/ProductImages/f6b6dce303806861196f6483584fb691 (1).jpg',
     },
     {
         id: '3',
-        name: 'Cameroon Pepper Powder',
+        name: 'Mineral Sea Salt',
         details: 'Good for the blood and bones. It does wonders!',
         price: 'N4,000',
         rating: 5,
         reviews: 200,
-        image: '/ProductImages/Product1.png', // Replace with actual image path
+        image: '/ProductImages/ed63b0acdcae52c0bc856464f72e2c68.jpg',
         
     },
     {
         id: '3',
-        name: 'Cameroon Pepper Powder',
+        name: 'Chipotle Seasoning',
         details: 'Good for the blood and bones. It does wonders!',
         price: 'N4,000',
         rating: 5,
         reviews: 200,
-        image: '/ProductImages/Product1.png', // Replace with actual image path
+        image: '/ProductImages/d134b8ceba2dd03c769a391c0e1b2dd3.jpg',
     },
     {
         id: '3',
-        name: 'Cameroon Pepper Powder',
+        name: 'Hot Chill Pepper',
         details: 'Good for the blood and bones. It does wonders!',
         price: 'N4,000',
         rating: 5,
         reviews: 200,
-        image: '/ProductImages/Product1.png', // Replace with actual image path 
+        image: '/ProductImages/cb6f691535df550fa2b768149d9c4353.jpg', 
+    },
+    {
+        id: '2',
+        name: 'Cimmamon Ground Powder',
+        details: 'A good source of Vitamin and Minerals',
+        price: 'N4,000',
+        rating: 5,
+        reviews: 200,
+        image: '/ProductImages/c0ea83bc4537a85be470bdb946490b43.jpg', 
+    },
+    {
+        id: '2',
+        name: 'Veggie Dust Seasoning',
+        details: 'A good source of Vitamin and Minerals',
+        price: 'N4,000',
+        rating: 5,
+        reviews: 200,
+        image: '/ProductImages/32d1cbb1a3592cb00e6ece29cc1262ee.jpg', 
     },
     {
         id: '2',
@@ -43,7 +61,16 @@ const products = [
         price: 'N4,000',
         rating: 5,
         reviews: 200,
-        image: '/ProductImages/Product1.png', // Replace with actual image path 
+        image: '/ProductImages/8ed1fb9a691478553fbde681f7ffd110.jpg', 
+    },
+    {
+        id: '2',
+        name: 'Shawarma Spice',
+        details: 'A good source of Vitamin and Minerals',
+        price: 'N4,000',
+        rating: 5,
+        reviews: 200,
+        image: '/ProductImages/7a35ad78bf804beb3cebe4c6d5d54623.jpg', 
     },
     {
         id: '2',
@@ -52,7 +79,25 @@ const products = [
         price: 'N4,000',
         rating: 5,
         reviews: 200,
-        image: '/ProductImages/Product1.png', // Replace with actual image path 
+        image: '/ProductImages/2d1e3d0a9a549c31509feec62cb811f0.jpg', 
+    },
+    {
+        id: '2',
+        name: 'Chilli Lime',
+        details: 'A good source of Vitamin and Minerals',
+        price: 'N4,000',
+        rating: 5,
+        reviews: 200,
+        image: '/ProductImages/abc4f1d542435c307703a865a69f3e06.jpg', 
+    },
+    {
+        id: '2',
+        name: 'Chipotle Seasoning',
+        details: 'A good source of Vitamin and Minerals',
+        price: 'N4,000',
+        rating: 5,
+        reviews: 200,
+        image: '/ProductImages/84e51f4fb1c3b2b3374c5bd27112f256.jpg', 
     },
     {
         id: '2',
@@ -61,7 +106,7 @@ const products = [
         price: 'N4,000',
         rating: 5,
         reviews: 200,
-        image: '/ProductImages/Product1.png', // Replace with actual image path 
+        image: '/ProductImages/144f6af4070caabe63b4b70f0b8ceb65.jpg', 
     },
     {
         id: '2',
@@ -70,7 +115,25 @@ const products = [
         price: 'N4,000',
         rating: 5,
         reviews: 200,
-        image: '/ProductImages/Product1.png', // Replace with actual image path 
+        image: '/ProductImages/84e51f4fb1c3b2b3374c5bd27112f256.jpg', 
+    },
+    {
+        id: '2',
+        name: 'Veggie Dust Seasoning',
+        details: 'A good source of Vitamin and Minerals',
+        price: 'N4,000',
+        rating: 5,
+        reviews: 200,
+        image: '/ProductImages/32d1cbb1a3592cb00e6ece29cc1262ee.jpg', 
+    },
+    {
+        id: '2',
+        name: 'Nacho Cheese Seasoning',
+        details: 'A good source of Vitamin and Minerals',
+        price: 'N4,000',
+        rating: 5,
+        reviews: 200,
+        image: '/ProductImages/f6b6dce303806861196f6483584fb691 (1).jpg', 
     },
     {
         id: '2',
@@ -79,70 +142,7 @@ const products = [
         price: 'N4,000',
         rating: 5,
         reviews: 200,
-        image: '/ProductImages/Product1.png', // Replace with actual image path 
-    },
-    {
-        id: '2',
-        name: 'Cameroon Pepper Powder',
-        details: 'A good source of Vitamin and Minerals',
-        price: 'N4,000',
-        rating: 5,
-        reviews: 200,
-        image: '/ProductImages/Product1.png', // Replace with actual image path 
-    },
-    {
-        id: '2',
-        name: 'Cameroon Pepper Powder',
-        details: 'A good source of Vitamin and Minerals',
-        price: 'N4,000',
-        rating: 5,
-        reviews: 200,
-        image: '/ProductImages/Product1.png', // Replace with actual image path 
-    },
-    {
-        id: '2',
-        name: 'Cameroon Pepper Powder',
-        details: 'A good source of Vitamin and Minerals',
-        price: 'N4,000',
-        rating: 5,
-        reviews: 200,
-        image: '/ProductImages/Product1.png', // Replace with actual image path 
-    },
-    {
-        id: '2',
-        name: 'Cameroon Pepper Powder',
-        details: 'A good source of Vitamin and Minerals',
-        price: 'N4,000',
-        rating: 5,
-        reviews: 200,
-        image: '/ProductImages/Product1.png', // Replace with actual image path 
-    },
-    {
-        id: '2',
-        name: 'Cameroon Pepper Powder',
-        details: 'A good source of Vitamin and Minerals',
-        price: 'N4,000',
-        rating: 5,
-        reviews: 200,
-        image: '/ProductImages/Product1.png', // Replace with actual image path 
-    },
-    {
-        id: '2',
-        name: 'Cameroon Pepper Powder',
-        details: 'A good source of Vitamin and Minerals',
-        price: 'N4,000',
-        rating: 5,
-        reviews: 200,
-        image: '/ProductImages/Product1.png', // Replace with actual image path 
-    },
-    {
-        id: '2',
-        name: 'Cameroon Pepper Powder',
-        details: 'A good source of Vitamin and Minerals',
-        price: 'N4,000',
-        rating: 5,
-        reviews: 200,
-        image: '/ProductImages/Product1.png', // Replace with actual image path 
+        image: '/ProductImages/7a35ad78bf804beb3cebe4c6d5d54623.jpg', 
     },
    
   

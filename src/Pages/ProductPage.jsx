@@ -45,45 +45,44 @@ const ProductPage = () => {
                     </div>
                 </div>
                 <div className="product-info">
-                    <div>
-                        <h2>{product.name}</h2>
+                    <div className='productup'>
+                        <h1>{product.name}</h1>
                         <p>{product.details}</p>
                         <div className="rating">
                             {'★'.repeat(product.rating)}
                             {'☆'.repeat(5 - product.rating)}
                             <span className='review'>({product.reviews})</span>
                         </div>
-                        <p className="price">{product.price}</p>
+                        <h2 className="price">{product.price}</h2>
                     </div>
-                    <div className='cart'>
-                        <div className="quantity-selector">
-                            <div className='size mt-4'>
-                                <div>
-                                    <p className='text-dark'>Size</p>
-                                    <div className='d-flex gap-3 mt-2'>
-                                        <button type='button' className='but bg-warning text-white'>100kg</button>
-                                        <button type='button' className='but bg-light text-warning'>200kg</button>
+                        <div className='productdown'>
+                            <div className='size'>
+                                <div className='sizebut'>
+                                    <h4 className='psize'>Size</h4>
+                                    <div className='sizebutton'>
+                                        <button className='buto'>100kg</button>
+                                        <button className='butoo'>200kg</button>
                                     </div>
                                 </div>
                                 <div>
-                                    <p className='text-dark'>Quantity</p>
-                                    <div className='d-flex gap-1 mt-2'>
+                                    <h4 className='psize'>Quantity</h4>
+                                    <div className='click'>
                                         <button className='but3' onClick={() => handleQuantityChange(-1)}>-</button>
-                                        <span>{quantity}</span>
-                                        <button className='but4 bg-warning text-light' onClick={() => handleQuantityChange(1)}>+</button>
+                                        <span className='butext'>{quantity}</span>
+                                        <button className='but4' onClick={() => handleQuantityChange(1)}>+</button>
                                     </div>
                                 </div>
                             </div>
+                                <button className="add-to-cart" onClick={handleAddToCart}><IoCartOutline className='' />Add to Cart</button>
                         </div>
-                    </div>
-                    <button className="add-to-cart mt-5" onClick={handleAddToCart}><IoCartOutline className='me-1 fs-4' />Add to Cart</button>
+              
                 </div>
             </div>
 
             <div className='quantity-selector'></div>
             <div>
                 <div className='overview'>
-                    <a href="#" alt="" className='a'>Overview</a>
+                    <a href="#" alt="" className='a'><span className='acolor'>Overview</span></a>
                     <a href="#" alt="" className='a'>Specification</a>
                     <a href="#" alt="" className='a'>Reviews</a>
                 </div>

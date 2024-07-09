@@ -1,37 +1,46 @@
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import { IoCartOutline } from "react-icons/io5";
-import Logo from "../../src/Images/Logo.png"
+import React, { useState } from 'react';
+import Logo from '../Images/Logo.png';
+import { MdOutlineShoppingCart } from "react-icons/md";
 
-function NavScrollExample() {
+function Header() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   return (
-    <Navbar expand="lg" className="bg-body-white container-fluid">
-      <Container>
-        <Navbar.Brand href="#" className='fs-3 fw-bold text-warning'> <img src={Logo} alt=""  />Chanel</Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll">
-          <Nav
-            className="ms-auto my-2 my-lg-0 gap-3 "
-            style={{ maxHeight: '60px'}}
-            navbarScroll
-          >
-          
-            <Nav.Link href="#action1" className='text-dark hove'>Home</Nav.Link>
-            <Nav.Link href="#action2" className='text-dark hove'>product</Nav.Link>
-            <Nav.Link href="#action2" className='text-dark hove'>About Us</Nav.Link>
-            <Nav.Link href="#action2" className='text-dark hove'>Contact Us</Nav.Link>
-          </Nav>
-          <div className="d-flex ms-auto gap-2">
-          <a href='#'><IoCartOutline className='fs-1 text-dark'/> </a>
-            <Button variant="outline-warning" className='px-4 '>Sign In</Button>
-          </div>
-        </Navbar.Collapse>
-        
-      </Container>
-    </Navbar>
+    <div className='container'>
+      <div className='navbar'>
+        <div className='navlog'>
+          <img src={Logo} alt="" className='logo' />
+          <h1 className='chanel'>Chanel</h1>
+        </div>
+        <div className='links'>
+          <a href="" className='link'>Home</a>
+          <a href="" className='link'>Product</a>
+          <a href="" className='link'>About us</a>
+          <a href="" className='link'>Contact us</a>
+        </div>
+        <div className='cart-sign'>
+          <a href='#' className='lin'><MdOutlineShoppingCart className='iconic' /></a>
+          <button className='signin'>sign in</button>
+        </div>
+        <div className='menu-icon' onClick={toggleMobileMenu}>
+          ☰
+        </div>
+      </div>
+      {isMobileMenuOpen && (
+        <div className='mobile-links'>
+          <a href="" className='link'>Home</a>
+          <a href="" className='link'>Product</a>
+          <a href="" className='link'>About us</a>
+          <a href="" className='link'>Contact us</a>
+          <button className='signin'>sign in</button>
+        </div>
+      )}
+    </div>
   );
 }
 
-export default NavScrollExample;
+export default Header;

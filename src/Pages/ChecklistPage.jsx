@@ -13,50 +13,50 @@ const ChecklistPage = () => {
     };
     return (
         <div className="container">
-            <div className='d-flex gap-5'>
+            <div className='formpage'>
                 <div>
                     <p className='text19'>Delivery details</p>
-                    <div className='d-flex gap-4'>
-                        <div>
+                    <div className='formdiv'>
+                        <div className='forminput'>
                             <p className='text18'>First Name</p>
                             <input type="text" placeholder='First name' className='input1'/>
                         </div>
-                        <div>
+                        <div className='forminput'>
                             <p className='text18'>Email address</p>
                             <input type="text" placeholder='johndoe@yahoo.com' className='input1'/>
                         </div>
                     </div>
-                    <div className='d-flex gap-4'>
-                        <div>
+                    <div className='formdiv'>
+                        <div className='forminput'>
                             <p className='text18'>Last Name</p>
                             <input type="text" placeholder='First name' className='input1'/>
                         </div>
-                        <div>
+                        <div className='forminput'>
                             <p className='text18'>Phone Number</p>
                             <input type="text" placeholder='+234 8193...' className='input1'/>
                         </div>
                     </div>
-                    <div className='d-flex gap-4'>
-                        <div>
+                    <div className='formdiv'>
+                        <div className='forminput'>
                             <p className='text18'>Company Name</p>
                             <input type="text" placeholder='Company name' className='input1'/>
                         </div>
-                        <div>
+                        <div className='forminput'>
                             <p className='text18'>Zip code</p>
                             <input type="text" placeholder='1100111' className='input1'/>
                         </div>
                     </div>
-                    <div className='d-flex gap-4'>
-                        <div>
+                    <div className='formdiv'>
+                        <div className='forminput'>
                             <p className='text18'>Country</p>
                             <input type="text" placeholder='Niger' className='input1'/>
                         </div>
-                        <div>
+                        <div className='forminput'>
                             <p className='text18'>City</p>
                             <input type="text" placeholder='New York' className='input1'/>
                         </div>
                     </div>
-                    <div>
+                    <div className='forminput'>
                             <p className='text18'>Street Address</p>
                             <input type="text" placeholder='St,Johns street, ofada.' className='input2'/>
                         </div>
