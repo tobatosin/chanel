@@ -75,7 +75,7 @@ const CartPage = () => {
                                 <div className='d-flex gap-1 align-items-center'>
                                     <button className='but3 px-3' onClick={() => handleQuantityChange(-1)}>-</button>
                                     <span>{quantity}</span>
-                                    <button className='but4 px-3 bg-warning text-light' onClick={() => handleQuantityChange(1)}>+</button>
+                                    <button className='but3 px-3 bg-warning text-light' onClick={() => handleQuantityChange(1)}>+</button>
                                 </div>
                             </div>
                         </div>
