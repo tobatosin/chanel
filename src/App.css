@@ -766,10 +766,10 @@ padding: 14px;
     padding: 14px 32px 14px 32px;
     gap: 8px;
     border-radius: 8px;
-    border: 1px;
+    border: 1px px solid yellow;
     opacity: 0px;
-    background-color: #D9CD08;
-    color: black;
+    background-color: black;
+    color: yellow;
     margin-top: 91px;
 }
 
