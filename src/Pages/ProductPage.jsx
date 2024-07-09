@@ -73,6 +73,7 @@ const ProductPage = () => {
                                     </div>
                                 </div>
                             </div>
+                                    <p className='fs-5 mt-5'>pls click below..seems there is error somewhere ..why this part didnt show despite the correct code</p>
                                 <button className="add-to-cart" onClick={handleAddToCart}><IoCartOutline className='' />Add to Cart</button>
                         </div>
               
