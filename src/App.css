@@ -761,7 +761,7 @@ padding: 14px;
 }
 
 .product-info .add-to-cart {
-    width: Fill (444px)px;
+    /* width: Fill (444px)px;
     height: Hug (52px)px;
     padding: 14px 32px 14px 32px;
     gap: 8px;
@@ -770,7 +770,14 @@ padding: 14px;
     opacity: 0px;
     background-color: black;
     color: yellow;
-    margin-top: 91px;
+    margin-top: 91px; */
+
+    background-color: #ffcc00;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
 .product-info .add-to-cart:hover {

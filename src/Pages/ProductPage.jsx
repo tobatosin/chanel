@@ -1,5 +1,3 @@
-// ProductPage.js
-
 import React, { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import products from '../Data/ProductData';
@@ -13,6 +11,9 @@ const ProductPage = () => {
     const [quantity, setQuantity] = useState(1);
     const navigate = useNavigate();
 
+    console.log('Product:', product);
+    console.log('Quantity:', quantity);
+
     if (!product) {
         return <div>Product not found</div>;
     }
@@ -22,6 +23,7 @@ const ProductPage = () => {
     };
 
     const handleAddToCart = () => {
+        console.log('Add to Cart clicked');
         navigate('/cart');
     };
 
@@ -55,28 +57,27 @@ const ProductPage = () => {
                         </div>
                         <h2 className="price">{product.price}</h2>
                     </div>
-                        <div className='productdown'>
-                            <div className='size'>
-                                <div className='sizebut'>
-                                    <h4 className='psize'>Size</h4>
-                                    <div className='sizebutton'>
-                                        <button className='buto'>100kg</button>
-                                        <button className='butoo'>200kg</button>
-                                    </div>
-                                </div>
-                                <div>
-                                    <h4 className='psize'>Quantity</h4>
-                                    <div className='click'>
-                                        <button className='but3' onClick={() => handleQuantityChange(-1)}>-</button>
-                                        <span className='butext'>{quantity}</span>
-                                        <button className='but4' onClick={() => handleQuantityChange(1)}>+</button>
-                                    </div>
+                    <div className='productdown'>
+                        <div className='size'>
+                            <div className='sizebut'>
+                                <h4 className='psize'>Size</h4>
+                                <div className='sizebutton'>
+                                    <button className='buto'>100kg</button>
+                                    <button className='butoo'>200kg</button>
                                 </div>
                             </div>
-                                    <p className='fs-5 mt-5'>pls click below..seems there is error somewhere ..why this part didnt show despite the correct code</p>
-                                <button className="add-to-cart" onClick={handleAddToCart}><IoCartOutline className='' />Add to Cart</button>
+                            <div>
+                                <h4 className='psize'>Quantity</h4>
+                                <div className='click'>
+                                    <button className='but3' onClick={() => handleQuantityChange(-1)}>-</button>
+                                    <span className='butext'>{quantity}</span>
+                                    <button className='but4' onClick={() => handleQuantityChange(1)}>+</button>
+                                </div>
+                            </div>
                         </div>
-              
+                        <p className='fs-5 mt-5'>pls click below..seems there is error somewhere ..why this part didnt show despite the correct code</p>
+                        <button className="add-to-cart" onClick={handleAddToCart}><IoCartOutline className='' />Add to Cart</button>
+                    </div>
                 </div>
             </div>
 
