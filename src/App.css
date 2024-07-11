@@ -721,6 +721,7 @@ display: flex;
     border-radius: 4px;
     background-color: rgb(217,205,8);
     border: 1px solid #D9CD08;
+    color: white;
 
     
 }
@@ -769,12 +770,16 @@ padding: 14px;
     color: yellow;
     margin-top: 91px; */
 
-    background-color: #ffcc00;
-    color: black;
+    background-color: #D9CD08;
+    color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 14px 32px;
     cursor: pointer;
     font-size: 16px;
+    border-radius: 8px;
+    gap: 8px;
+    margin-top: 91px;
+    
 }
 
 .product-info .add-to-cart:hover {
