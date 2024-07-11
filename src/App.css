@@ -714,13 +714,11 @@ display: flex;
 
 }
 .but4{
-    /* width: Fixed (32px)px;
-    height: Hug (32px)px; */
+  
     left: 74px;
     padding: 8px 10px;
     gap: 8px;
     border-radius: 4px;
-    opacity: 0px;
     background-color: rgb(217,205,8);
     border: 1px solid #D9CD08;
 
@@ -732,7 +730,6 @@ font-size: 16px;
 font-weight: 400;
 line-height: 24px;
 text-align: left;
-/* margin: 8px 5px; */
 padding: 14px;
 
 }
