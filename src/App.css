@@ -15,18 +15,28 @@ body{
     align-items: center;
     padding: 10px 20px;
     background-color: #fff;
+   
   }
   
   .navlog {
     display: flex;
     align-items: center;
+    flex: 1 0 0;
   }
   
   .chanel {
-    font-size: 24px;
+    /* font-size: 24px;
     font-weight: 600;
     color: #D9CD08;
-    margin-top: 20px;
+    margin-top: 20px; */
+
+color: var(--Secondary-100, #D9CD08);
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: 36px;
+/* padding-top: 20px; */
   }
   
   .cart-sign {
@@ -43,7 +53,7 @@ body{
   }
   
   .logo {
-    width: 80px;
+    width: 60px;
   }
   
   .links {
@@ -275,6 +285,7 @@ body{
     top: 410px;
     left: 120px;
     border-radius: 8px;
+    text-align: justify;
     }
     .product{
     font-family: Inter;
@@ -304,6 +315,47 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+/* Dropdown.css */
+.dropdown-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    text-align: justify;
+    margin-left: 13px;
+  }
+  
+  .dropdown-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 1px solid var(--Grey-300, #9C9C9C);
+    background: var(--Backgrounds-Primary, #FFF);
+    cursor: pointer;
+    width: 137px;
+  }
+  
+  .dropdown-item {
+    /* display: flex;
+    align-items: center;
+    padding: 8px 16px; */
+    
+  }
+  
+  .dropdown-item:hover {
+    background-color: #ECE683;
+    ;
+  }
+  
+  @media (max-width: 600px) {
+    .dropdown-toggle {
+      width: 100%;
+    }
+  }
+  
+
 
 /* Style for each product card */
 .product-card {
