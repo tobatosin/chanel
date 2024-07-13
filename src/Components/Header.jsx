@@ -16,13 +16,13 @@ function Header() {
           <img src={Logo} alt="" className='logo' />
           <h1 className='chanel'>Chanel</h1>
         </div>
-        <div className='links'>
+        <div className='links '>
           <a href="" className='link'>Home</a>
           <a href="" className='link'>Product</a>
           <a href="" className='link'>About us</a>
           <a href="" className='link'>Contact us</a>
         </div>
-        <div className='cart-sign'>
+        <div className='cart-sign '>
           <a href='#' className='lin'><MdOutlineShoppingCart className='iconic' /></a>
           <button className='signin'>sign in</button>
         </div>

@@ -19,11 +19,11 @@ const Home = () => {
     <div>
       <Container fluid className='home'>
         <Container className='homecon'>
-          <div>
+          <div className="text-center"> {/* Center align content */}
             <h2 className='what'>What is life without a little spice?</h2>
             <h4 className='shop'>Shop Chanel today!</h4>
           </div>
-          <div className="search">
+          <div className="search d-flex justify-content-center"> {/* Center align search box */}
             <div className="search-box-wrapper">
               <i className="fa fa-search search-icon"></i>
               <input
