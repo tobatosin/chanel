@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
+// ProductPage.js
+import React, { useState, useContext } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import { CartContext } from '../Components/CartContext';
 import products from '../Data/ProductData';
 import { IoCartOutline } from "react-icons/io5";
 import ProductCard from '../Components/ProductCard';
@@ -10,9 +12,7 @@ const ProductPage = () => {
     const product = products.find(product => product.id === id);
     const [quantity, setQuantity] = useState(1);
     const navigate = useNavigate();
-
-    console.log('Product:', product);
-    console.log('Quantity:', quantity);
+    const { addToCart } = useContext(CartContext);
 
     if (!product) {
         return <div>Product not found</div>;
@@ -23,7 +23,7 @@ const ProductPage = () => {
     };
 
     const handleAddToCart = () => {
-        console.log('Add to Cart clicked');
+        addToCart(product, quantity);
         navigate('/cart');
     };
 

@@ -15,6 +15,7 @@ body{
     align-items: center;
     padding: 10px 20px;
     background-color: #fff;
+    height: 70px;
   }
   
   .navlog {
@@ -30,6 +31,7 @@ body{
     font-style: normal;
     font-weight: 600;
     line-height: 36px;
+    margin-top: 20px;
   }
   
   .cart-sign {
@@ -1073,15 +1075,21 @@ color: #6B6B6B;
     border-radius: 8px;
     border: none;
 }
+.product-detail-image4 {
+    max-width: 30%;
+    border-radius: 8px;
+    border: none;
+}
 .side1{
     display: flex;
     align-items: center;
+    gap: 20px;
 }
 .text11{
     margin-left: -10px;
 }
 .text9{
-    font-size: 12px;
+    font-size: 9px;
 }
 .text0{
     font-size: 13px;
