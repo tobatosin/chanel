@@ -13,7 +13,7 @@ const ProductCard = ({ product }) => {
             <div className='p-div'>
             <h4>{product.name}</h4>
             <p className='p-details'>{product.details}</p>
-            <p className="price">Price: {product.price}</p>
+            <p className="price">#{product.price}</p>
             <div className="rating">
                 {'★'.repeat(product.rating)}
                 {'☆'.repeat(5 - product.rating)}
